@@ -1,0 +1,39 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+
+    .footer__container {
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .footer__title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer__description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__social {
+        margin-bottom: 1.5rem;
+
+        .footer__link {
+            display: inline-block;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            color: #fff;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: rgba(248, 117, 55, 1);
+            }
+        }
+    }
+
+    .footer__copy {
+        font-size: 0.875rem;
+    }
+}

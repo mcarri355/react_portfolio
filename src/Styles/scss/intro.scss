@@ -1,99 +1,168 @@
 .introFlex {
-    display: flex;
-    height: 95vh;
-    justify-content: space-between;
+  display: flex;
+  height: 95vh;
+  justify-content: space-between;
+  height: 95vh;
+  margin: {
+    top: 5vh;
+    bottom: 5vh;
+    right: 5rem;
+    left: 5rem;
+  };
 
-    .introText {
-        font-family: poppins;
-        width: 55%;
-        font-size: 5rem;
-        margin-left: 1rem;
+  .introText {
+    font-family: poppins;
+    width: 55%;
+    font-size: 5rem;
+    margin-left: 1rem;
+    align-items: baseline;
+    padding-bottom: 10vh;
+    align-self: center;
 
-        .introBtn {
-            display: flex;
+    .introBtn {
+      display: flex;
 
-            .btnGradient {
-                background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
-                color: white;
-                border: none;
-            }
-
-            button {
-                margin-right: 1rem;
-                padding: 1rem 2rem;
-                border-radius: 5px;
-                font-size: 1.5rem;
-                font-weight: 600;
-                border: none;
-                cursor: pointer;
-                outline: none;
-                transition: all 0.3s ease-in-out;
-                background-color: rgba($color: #000000, $alpha: 0.0);
-                border: 3px solid black;
-
-                &:hover {
-                    background-color: black;
-                    color: #f87537;
-                }
-            }
+      .btnGradient {
+        background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
+        color: white;
+        border: 3px solid black;
+        &:hover{
+          color: black;
         }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%; // Match the height of the buttons
+        text-decoration: none; // Remove underline from anchor tags
+
+        button {
+          margin-right: 1rem;
+          padding: 1rem 2rem;
+          border-radius: 5px;
+          font-size: 1.5rem;
+          font-weight: 600;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          transition: all 0.3s ease-in-out;
+          background-color: rgba($color: #000000, $alpha: 0.0);
+          border: 3px solid black;
+
+          &:hover {
+            background-color: black;
+            color: #f87537;
+          }
+        }
+      }
+    }
+  }
+
+  .textGradient {
+    background: #FBA81F;
+    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .introImg {
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative; // Added
+
+    img {
+      position: absolute; // Added
+      top: 50%; // Added
+      left: 50%; // Added
+      transform: translate(-50%, -50%); // Added
+      z-index: 1; // Added
+      width: 100%;
     }
 
-    .textGradient {
-        background: #FBA81F;
-        background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+    .introCircle {
+      position: relative; // Added
 
-    .introImg {
-        width: 45%;
-        height: 100%;
+      .outerCircle {
+        width: 100%;
+        height: 95vh;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
         justify-content: center;
         align-items: center;
-        position: relative; // Added
+        opacity: 0.6; // Adjust opacity for outer circle
 
-        img {
-            position: absolute; // Added
-            top: 50%; // Added
-            left: 50%; // Added
-            transform: translate(-50%, -50%); // Added
-            z-index: 1; // Added
-            width: 100%;
+        .middleCircle {
+          width: 85%;
+          height: 80vh;
+          border-radius: 50%;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0.8; // Adjust opacity for middle circle
+
+          .innerCircle {
+            width: 70%;
+            height: 65vh;
+            border-radius: 50%;
+            border: 1px solid black;
+            opacity: 1; // Adjust opacity for inner circle
+          }
         }
-
-        .introCircle {
-            position: relative; // Added
-
-            .outerCircle {
-                width: 100%;
-                height: 95vh;
-                border-radius: 50%;
-                border: 1px solid black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                opacity: 0.6; // Adjust opacity for outer circle
-
-                .middleCircle {
-                    width: 85%;
-                    height: 80vh;
-                    border-radius: 50%;
-                    border: 1px solid black;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 0.8; // Adjust opacity for middle circle
-
-                    .innerCircle {
-                        width: 70%;
-                        height: 65vh;
-                        border-radius: 50%;
-                        border: 1px solid black;
-                        opacity: 1; // Adjust opacity for inner circle
-                    }
-                }
-            }
-        }
+      }
     }
+  }
+}
+
+
+.aboutFlex{
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  .aboutImg{
+    width: 30%;
+    height: 25rem;
+    background-color: grey;
+    object-position: center;
+      object-fit: cover;
+    .fblaImg{
+      width: 100%;
+    }
+  }
+  .aboutText{
+    width: 55%;
+    .aboutTitle{
+      font-size: 4rem;
+    }
+    .aboutSubtext{
+      font-weight: 600;
+    }
+    .aboutBtn{
+      a{
+        button {
+            margin-right: 1rem;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            background-color: rgba($color: #000000, $alpha: 0.0);
+            border: 3px solid black;
+        
+            &:hover {
+              background-color: black;
+              color: #f87537;
+            }
+          }
+      }
+    }
+  }
 }

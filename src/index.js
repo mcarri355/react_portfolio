@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
-import Index from './App'
+import App from './App';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Projects from './Pages/Projects';
@@ -10,7 +10,7 @@ import './index.css';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Index />,
+    element: <App />,
   },
   {
     path: '/about',
@@ -23,12 +23,12 @@ const router = createBrowserRouter([
   {
     path: '/projects',
     element: <Projects />,
-  }
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
-);  
+);

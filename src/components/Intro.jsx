@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/css/intro.css';
 import Blob from '../images/blob.svg'
+import introImg from '../images/introImg.png'
 
 const Intro = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -47,8 +48,8 @@ const Intro = () => {
           </span>
           <br />
           <div className='introBtn'>
-            <button className='btnGradient'>About Me</button>
-            <button>Contact</button>
+            <a href="/about"><button onclick="window.location.href='/about'" class='btnGradient'>About Me</button></a>
+            <a href="/contact"><button onclick="window.location.href='/resume'">Contact</button></a>
           </div>
         </div>
           <div className='introImg'>
@@ -61,8 +62,6 @@ const Intro = () => {
             </div>
             </div>
         </div>
-
-
       </div>
     </>
   );
