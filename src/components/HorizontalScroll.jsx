@@ -1,5 +1,6 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import '../Styles/css/scroll.css';
 
 const HorizontalScroll = () => {
   return (
@@ -25,7 +26,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-45%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-75%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
@@ -46,7 +47,7 @@ const Card = ({ card }) => {
       key={card.id}
       className="group relative h-[600px] w-[450px] overflow-hidden bg-neutral-200 border-2 border-black"
     >
-      <div className="absolute inset-0 z-0">
+      <div className=" absolute inset-0 z-0">
         <div className="absolute top-0 left-0 right-0 flex items-center justify-center p-4 bg-opacity-50">
           <p className="text-black text-lg">{card.title}</p>
         </div>

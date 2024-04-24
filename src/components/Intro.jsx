@@ -53,14 +53,7 @@ const Intro = () => {
           </div>
         </div>
           <div className='introImg'>
-            <img src={Blob} alt="" className='blobSvg'/>
-            <div className='introCircle'>
-            <div className='outerCircle'>
-                <div className='middleCircle'>
-                    <div className='innerCircle'></div>
-                </div>
-            </div>
-            </div>
+            <img src='' alt="" />
         </div>
       </div>
     </>

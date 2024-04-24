@@ -4,7 +4,7 @@
   justify-content: space-between;
   height: 95vh;
   margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-bottom: 2rem;
   margin-right: 5rem;
   margin-left: 5rem;
 }
@@ -23,10 +23,10 @@
 .introFlex .introText .introBtn .btnGradient {
   background: linear-gradient(66deg, rgb(251, 168, 31) 0%, rgb(248, 117, 55) 100%);
   color: white;
-  border: 3px solid black;
+  border: none;
 }
 .introFlex .introText .introBtn .btnGradient:hover {
-  color: black;
+  color: white;
 }
 .introFlex .introText .introBtn a {
   display: flex;
@@ -45,11 +45,11 @@
   outline: none;
   transition: all 0.3s ease-in-out;
   background-color: rgba(0, 0, 0, 0);
-  border: 3px solid black;
+  border: 1px solid black;
 }
 .introFlex .introText .introBtn a button:hover {
   background-color: black;
-  color: #f87537;
+  color: white;
 }
 .introFlex .textGradient {
   background: #FBA81F;
@@ -107,7 +107,6 @@
   display: flex;
   margin-bottom: 3rem;
   justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 .aboutFlex .aboutImg {
   width: 30%;
@@ -144,4 +143,317 @@
 .aboutFlex .aboutText .aboutBtn a button:hover {
   background-color: black;
   color: #f87537;
+}
+
+@media screen and (max-width: 1440px) {
+  .introFlex {
+    display: flex;
+    height: 95vh;
+    justify-content: space-between;
+    height: 95vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 5rem;
+    margin-left: 3rem;
+  }
+  .introFlex .introText {
+    font-family: poppins;
+    width: 55%;
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    align-items: baseline;
+    padding-bottom: 10vh;
+    align-self: center;
+  }
+  .introFlex .introText .introBtn {
+    display: flex;
+  }
+  .introFlex .introText .introBtn .btnGradient {
+    background: linear-gradient(66deg, rgb(251, 168, 31) 0%, rgb(248, 117, 55) 100%);
+    color: white;
+    border: none;
+  }
+  .introFlex .introText .introBtn .btnGradient:hover {
+    color: white;
+  }
+  .introFlex .introText .introBtn a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+  }
+  .introFlex .introText .introBtn a button {
+    margin-right: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+  }
+  .introFlex .introText .introBtn a button:hover {
+    background-color: black;
+    color: white;
+  }
+  .introFlex .textGradient {
+    background: #FBA81F;
+    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .introFlex .introImg {
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .introFlex .introImg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .introFlex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: space-between;
+    height: 95vh;
+  }
+  .introFlex .introText {
+    font-family: poppins;
+    width: 100%;
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    align-items: baseline;
+    padding-bottom: 10vh;
+    align-self: center;
+    text-align: center;
+  }
+  .introFlex .introText .introBtn {
+    display: flex;
+    justify-content: center;
+  }
+  .introFlex .introText .introBtn .btnGradient {
+    background: linear-gradient(66deg, rgb(251, 168, 31) 0%, rgb(248, 117, 55) 100%);
+    color: white;
+    border: none;
+  }
+  .introFlex .introText .introBtn .btnGradient:hover {
+    color: white;
+  }
+  .introFlex .introText .introBtn a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+  }
+  .introFlex .introText .introBtn a button {
+    margin-right: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+  }
+  .introFlex .introText .introBtn a button:hover {
+    background-color: black;
+    color: white;
+  }
+  .introFlex .textGradient {
+    background: #FBA81F;
+    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .introFlex .introImg {
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .introFlex .introImg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .aboutFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutFlex .aboutImg {
+    width: 80%;
+  }
+  .aboutFlex .aboutText {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .introFlex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: space-between;
+    height: 95vh;
+  }
+  .introFlex .introText {
+    font-family: poppins;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    align-items: baseline;
+    padding-bottom: 10vh;
+    align-self: center;
+    text-align: center;
+  }
+  .introFlex .introText .introBtn {
+    display: flex;
+    justify-content: center;
+  }
+  .introFlex .introText .introBtn .btnGradient {
+    background: linear-gradient(66deg, rgb(251, 168, 31) 0%, rgb(248, 117, 55) 100%);
+    color: white;
+    border: none;
+  }
+  .introFlex .introText .introBtn .btnGradient:hover {
+    color: white;
+  }
+  .introFlex .introText .introBtn a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+  }
+  .introFlex .introText .introBtn a button {
+    margin-right: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+  }
+  .introFlex .introText .introBtn a button:hover {
+    background-color: black;
+    color: white;
+  }
+  .introFlex .textGradient {
+    background: #FBA81F;
+    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .introFlex .introImg {
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .introFlex .introImg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+  }
+  .aboutFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutFlex .aboutImg {
+    width: 80%;
+  }
+  .aboutFlex .aboutText {
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+  .aboutFlex .aboutText .aboutTitle {
+    font-size: 3rem;
+  }
+  .aboutFlex .aboutText .aboutBtn a button {
+    margin-right: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid black;
+  }
+  .aboutFlex .aboutText .aboutBtn a button:hover {
+    background-color: black;
+    color: #f87537;
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutFlex .aboutImg {
+    width: 80%;
+  }
+  .aboutFlex .aboutText {
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+  .aboutFlex .aboutText .aboutTitle {
+    font-size: 2rem;
+  }
+  .aboutFlex .aboutText .aboutSubtext {
+    font-size: 0.75rem;
+  }
+  .aboutFlex .aboutText .aboutBtn a button {
+    margin-right: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid black;
+  }
+  .aboutFlex .aboutText .aboutBtn a button:hover {
+    background-color: black;
+    color: #f87537;
+  }
 }

@@ -10,10 +10,10 @@ const App = () => {
   return (
     <>
     <Intro/>
-    <HorizontalScroll></HorizontalScroll>
+    {/* <HorizontalScroll></HorizontalScroll>
     <Slider></Slider>
     <IntroAbout></IntroAbout>
-    <Footer></Footer>
+    <Footer></Footer> */}
     
     </>
   )

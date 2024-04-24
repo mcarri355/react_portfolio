@@ -1,0 +1,73 @@
+/* Default styles */
+.relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-neutral-500 {
+    color: #7f7f7f;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.group {
+    position: relative;
+}
+
+/* Media queries */
+/* Small screens (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100px;
+        height: 150px;
+    }
+
+    .card .text-black {
+        font-size: 12px;
+    }
+}
+
+/* Medium screens (min-width: 601px) and (max-width: 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .card {
+        width: 150px;
+        height: 200px;
+    }
+
+    .card .text-black {
+        font-size: 14px;
+    }
+}
+
+/* Large screens (min-width: 901px) */
+@media only screen and (min-width: 901px) {
+    .card {
+        width: 200px;
+        height: 250px;
+    }
+
+    .card .text-black {
+        font-size: 16px;
+    }
+}

@@ -5,8 +5,8 @@
   height: 95vh;
   margin: {
     top: 5vh;
-    bottom: 5vh;
-    right: 5rem;
+    bottom: 2rem;
+    right: 5rem;  
     left: 5rem;
   };
 
@@ -25,9 +25,9 @@
       .btnGradient {
         background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
         color: white;
-        border: 3px solid black;
+        border: none;
         &:hover{
-          color: black;
+          color: white;
         }
       }
 
@@ -48,11 +48,11 @@
           outline: none;
           transition: all 0.3s ease-in-out;
           background-color: rgba($color: #000000, $alpha: 0.0);
-          border: 3px solid black;
+          border: 1px solid black;
 
           &:hover {
             background-color: black;
-            color: #f87537;
+            color: white;
           }
         }
       }
@@ -123,7 +123,6 @@
   display: flex;
   margin-bottom: 3rem;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   .aboutImg{
     width: 30%;
     height: 25rem;
@@ -165,4 +164,373 @@
       }
     }
   }
+}
+@media screen and (max-width: 1440px) {
+.introFlex {
+  display: flex;
+  height: 95vh;
+  justify-content: space-between;
+  height: 95vh;
+
+  margin: {
+    top: 5vh;
+    bottom: 5vh;
+    right: 5rem;
+    left: 3rem;
+  }
+
+  ;
+
+  .introText {
+    font-family: poppins;
+    width: 55%;
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    align-items: baseline;
+    padding-bottom: 10vh;
+    align-self: center;
+
+    .introBtn {
+      display: flex;
+
+      .btnGradient {
+        background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
+        color: white;
+        border: none;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%; // Match the height of the buttons
+        text-decoration: none; // Remove underline from anchor tags
+
+        button {
+          margin-right: 1rem;
+          padding: .75rem 1.5rem;
+          border-radius: 5px;
+          font-size: 1.25rem;
+          font-weight: 600;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          transition: all 0.3s ease-in-out;
+          background-color: rgba($color: #000000, $alpha: 0.0);
+          border: 1px solid black;
+
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .textGradient {
+    background: #FBA81F;
+    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .introImg {
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative; // Added
+
+    img {
+      position: absolute; // Added
+      top: 50%; // Added
+      left: 50%; // Added
+      transform: translate(-50%, -50%); // Added
+      z-index: 1; // Added
+      width: 100%;
+    }
+
+  }
+}
+}
+
+@media screen and (max-width: 1023px) {
+  .introFlex {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 95vh;
+      justify-content: space-between;
+      height: 95vh;
+  
+      .introText {
+        font-family: poppins;
+        width: 100%;
+        font-size: 3.5rem;
+        margin-left: 1rem;
+        align-items: baseline;
+        padding-bottom: 10vh;
+        align-self: center;
+        text-align: center;
+  
+        .introBtn {
+          display: flex;
+          justify-content: center;
+          .btnGradient {
+            background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
+            color: white;
+            border: none;
+  
+            &:hover {
+              color: white;
+            }
+          }
+  
+          a {
+            display: flex;
+            align-items: center;
+            height: 100%; // Match the height of the buttons
+            text-decoration: none; // Remove underline from anchor tags
+  
+            button {
+              margin-right: 1rem;
+              padding: .75rem 1.5rem;
+              border-radius: 5px;
+              font-size: 1.25rem;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              outline: none;
+              transition: all 0.3s ease-in-out;
+              background-color: rgba($color: #000000, $alpha: 0.0);
+              border: 1px solid black;
+  
+              &:hover {
+                background-color: black;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+  
+      .textGradient {
+        background: #FBA81F;
+        background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      .introImg {
+        width: 45%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative; // Added
+  
+        img {
+          position: absolute; // Added
+          top: 50%; // Added
+          left: 50%; // Added
+          transform: translate(-50%, -50%); // Added
+          z-index: 1; // Added
+          width: 100%;
+        }
+  
+      }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+  .aboutFlex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .aboutImg{
+      width: 80%;
+    }
+    .aboutText{
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .introFlex {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 95vh;
+      justify-content: space-between;
+      height: 95vh;
+  
+      .introText {
+        font-family: poppins;
+        width: 100%;
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        align-items: baseline;
+        padding-bottom: 10vh;
+        align-self: center;
+        text-align: center;
+  
+        .introBtn {
+          display: flex;
+          justify-content: center;
+  
+          .btnGradient {
+            background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
+            color: white;
+            border: none;
+  
+            &:hover {
+              color: white;
+            }
+          }
+  
+          a {
+            display: flex;
+            align-items: center;
+            height: 100%; // Match the height of the buttons
+            text-decoration: none; // Remove underline from anchor tags
+  
+            button {
+              margin-right: 1rem;
+              padding: .75rem 1.5rem;
+              border-radius: 5px;
+              font-size: 1.25rem;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              outline: none;
+              transition: all 0.3s ease-in-out;
+              background-color: rgba($color: #000000, $alpha: 0.0);
+              border: 1px solid black;
+  
+              &:hover {
+                background-color: black;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+  
+      .textGradient {
+        background: #FBA81F;
+        background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      .introImg {
+        width: 45%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative; // Added
+  
+        img {
+          position: absolute; // Added
+          top: 50%; // Added
+          left: 50%; // Added
+          transform: translate(-50%, -50%); // Added
+          z-index: 1; // Added
+          width: 100%;
+        }
+  
+      }
+    }
+  .aboutFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .aboutImg {
+      width: 80%;
+    }
+
+    .aboutText {
+      align-items: center;
+      width: 80%;
+      text-align: center;
+      .aboutTitle {
+          font-size: 3rem;
+        }
+                .aboutBtn {
+                  a {
+                    button {
+                      margin-right: 1rem;
+                      padding: .25rem .5rem;
+                      border-radius: 5px;
+                      font-size: 1rem;
+                      font-weight: 600;
+                      border: none;
+                      cursor: pointer;
+                      outline: none;
+                      transition: all 0.3s ease-in-out;
+                      background-color: rgba($color: #000000, $alpha: 0.0);
+                      border: 3px solid black;
+        
+                      &:hover {
+                        background-color: black;
+                        color: #f87537;
+                      }
+                    }
+                  }
+                }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutFlex {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .aboutImg {
+        width: 80%;
+      }
+  
+      .aboutText {
+        align-items: center;
+        width: 80%;
+        text-align: center;
+  
+        .aboutTitle {
+          font-size: 2rem;
+        }
+        .aboutSubtext{
+          font-size: .75rem;
+        }
+  
+        .aboutBtn {
+          a {
+            button {
+              margin-right: 1rem;
+              padding: .25rem .5rem;
+              border-radius: 5px;
+              font-size: 1rem;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              outline: none;
+              transition: all 0.3s ease-in-out;
+              background-color: rgba($color: #000000, $alpha: 0.0);
+              border: 3px solid black;
+  
+              &:hover {
+                background-color: black;
+                color: #f87537;
+              }
+            }
+          }
+        }
+      }
+    }
 }

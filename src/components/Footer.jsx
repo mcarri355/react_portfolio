@@ -1,9 +1,9 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'; // Import React icons
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import '../Styles/css/Footer.css';
 
-function Footer() {
-  return (
+const Footer = () => {
+   return (
     <footer className="footer">
       <div className="footer__container bd-container">
         <h2 className="footer__title">Matthew Carrillo</h2>
