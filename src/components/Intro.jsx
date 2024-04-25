@@ -49,7 +49,7 @@ const Intro = () => {
           <br />
           <div className='introBtn'>
             <a href="/about"><button onclick="window.location.href='/about'" class='btnGradient'>About Me</button></a>
-            <a href="/contact"><button onclick="window.location.href='/resume'">Contact</button></a>
+            <a href="/contact"><button onclick="window.location.href='/contact'">Contact</button></a>
           </div>
         </div>
           <div className='introImg'>

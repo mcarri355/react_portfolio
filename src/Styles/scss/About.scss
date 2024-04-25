@@ -1,0 +1,138 @@
+.aboutContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    .aboutTop{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 45%;
+        .containerImg{
+            width: 40%;
+            .accordionHeight{
+                height: 100%;
+            }
+        }
+        .containerInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .containerText{
+                width: 90%;
+                text-align: center;
+                .containerTitle{
+                    font-size: 3rem;
+                }
+            }
+            .containerSocials{
+                display: flex;
+                width: 80%;
+                justify-content: space-evenly;
+                .socialBtn {
+                        background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
+                        color: white;
+                        border: none;
+                        padding: 1rem 2rem;
+                            border-radius: 5px;
+                            font-size: 1.5rem;
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                .containerIcon{
+                    font-size: 5rem;
+                    &:hover{
+                        color: rgba(248, 117, 55, 1);
+                    }
+                }
+            }
+        }
+
+    }
+    .aboutBottom{
+        height: 45%;
+        width: 90%;
+        .skillsTitle{
+            font-size: 3rem;
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .aboutContainer{
+    .aboutTop{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        .containerImg{
+            width: 80%;
+        }
+        .containerInfo{
+            width: 100%;
+        }
+    }
+}
+}
+
+@media (max-width: 600px){
+    .aboutContainer {
+        
+            .aboutTop {
+                
+    
+                .containerImg {
+
+    
+                    .accordionHeight {
+
+                    }
+                }
+    
+                .containerInfo {
+
+                    .containerText {
+
+    
+                        .containerTitle {
+
+                        }
+                    }
+    
+                    .containerSocials {
+
+                        justify-content: space-between;
+                        .socialBtn {
+                            background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
+                            color: white;
+                            border: none;
+                            padding: .5rem 1rem;
+                            border-radius: 5px;
+                            font-size: .75rem;
+    
+                            &:hover {
+                                color: white;
+                            }
+                        }
+    
+                        .containerIcon {
+
+                        }
+                    }
+                }
+    
+            }
+    
+            .aboutBottom {
+
+            }
+        }
+}

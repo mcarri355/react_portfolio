@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../Styles/css/Contact.css';
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { AiFillFacebook, AiOutlineTwitter, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Contact() {
   const [focus, setFocus] = useState({}); // State to track focused input fields
@@ -17,6 +19,8 @@ function Contact() {
   };
 
   return (
+    <>
+    <Navbar></Navbar>
     <div className="container">
       <span className="big-circle"></span>
       <img src="img/shape.png" className="square" alt="" />
@@ -92,6 +96,8 @@ function Contact() {
         </div>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 }
 

@@ -1,14 +1,13 @@
-import { FiBarChart, FiBell, FiDollarSign, FiPlay } from "react-icons/fi";
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "./UseWindowSize";
-import { useState } from "react";
 
 const VerticalAccordion = () => {
   const [open, setOpen] = useState(items[0].id);
 
   return (
-    <section className="p-4">
-      <div className="flex flex-col lg:flex-row h-fit lg:h-[450px] w-full max-w-6xl mx-auto shadow overflow-hidden">
+    <section className="">
+      <div className="flex flex-col lg:flex-row h-fit lg:h-[45vh] mx-auto shadow ">
         {items.map((item) => {
           return (
             <Panel
@@ -16,7 +15,6 @@ const VerticalAccordion = () => {
               open={open}
               setOpen={setOpen}
               id={item.id}
-              Icon={item.Icon}
               title={item.title}
               imgSrc={item.imgSrc}
               description={item.description}
@@ -28,7 +26,7 @@ const VerticalAccordion = () => {
   );
 };
 
-const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) => {
+const Panel = ({ open, setOpen, id, title, imgSrc, description }) => {
   const { width } = useWindowSize();
   const isOpen = open === id;
 
@@ -47,9 +45,7 @@ const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) => {
           {title}
         </span>
         <span className="block lg:hidden text-xl font-light">{title}</span>
-        <div className="w-6 lg:w-full aspect-square bg-indigo-600 text-white grid place-items-center">
-          <Icon />
-        </div>
+        {/* Removed the icon */}
         <span className="w-4 h-4 bg-white group-hover:bg-slate-50 transition-colors border-r-[1px] border-b-[1px] lg:border-b-0 lg:border-t-[1px] border-slate-200 rotate-45 absolute bottom-0 lg:bottom-[50%] right-[50%] lg:right-0 translate-y-[50%] translate-x-[50%] z-20" />
       </button>
 
@@ -122,37 +118,33 @@ const descriptionVariants = {
 const items = [
   {
     id: 1,
-    title: "Earn more",
-    Icon: FiDollarSign,
+    title: "West-MEC",
     imgSrc:
-      "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://www.west-mec.edu/cms/lib/AZ50010839/Centricity/Domain/10/SWC_F.png",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
   },
   {
     id: 2,
-    title: "Play more",
-    Icon: FiPlay,
+    title: "Coder",
     imgSrc:
-      "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80",
+      "https://images.prismic.io/turing/652ec6fefbd9a45bcec81a1f_Coder_a63a8aeefd.webp?auto=format%2Ccompress&fit=max&w=3840",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
   },
   {
     id: 3,
-    title: "Keep track",
-    Icon: FiBell,
+    title: "SMHS",
     imgSrc:
-      "https://images.unsplash.com/photo-1578450671530-5b6a7c9f32a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "https://www.peoriaunified.org/cms/lib/AZ01924969/Centricity/Domain/49/IMG_4261.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
   },
   {
     id: 4,
-    title: "Grow faster",
-    Icon: FiBarChart,
+    title: "Gamer",
     imgSrc:
-      "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://store-images.s-microsoft.com/image/apps.30323.14537704372270848.6ecb6038-5426-409a-8660-158d1eb64fb0.08703491-f5dc-4b00-bca6-486b7b293c17?q=90&w=480&h=270",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
   },
