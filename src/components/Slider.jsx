@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../Styles/css/slide.css'; // Import your CSS file
+import '../Styles/css/slide.css';
+import { gsap } from 'gsap';
 
 const Slider = () => {
     const [itemActive, setItemActive] = useState(0);

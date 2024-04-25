@@ -1,5 +1,6 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import { gsap } from "gsap";
 import '../Styles/css/scroll.css';
 
 const HorizontalScroll = () => {
