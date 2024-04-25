@@ -1,192 +1,13 @@
 .introFlex {
   display: flex;
-  height: 95vh;
+  height: 80vh;
   justify-content: space-between;
-  height: 95vh;
-  margin: {
-    top: 5vh;
-    bottom: 2rem;
-    right: 5rem;  
-    left: 5rem;
-  };
+  margin: 5vh 5rem 2rem;
 
   .introText {
     font-family: poppins;
     width: 55%;
     font-size: 5rem;
-    margin-left: 1rem;
-    align-items: baseline;
-    padding-bottom: 10vh;
-    align-self: center;
-
-    .introBtn {
-      display: flex;
-
-      .btnGradient {
-        background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
-        color: white;
-        border: none;
-        &:hover{
-          color: white;
-        }
-      }
-
-      a {
-        display: flex;
-        align-items: center;
-        height: 100%; // Match the height of the buttons
-        text-decoration: none; // Remove underline from anchor tags
-
-        button {
-          margin-right: 1rem;
-          padding: 1rem 2rem;
-          border-radius: 5px;
-          font-size: 1.5rem;
-          font-weight: 600;
-          border: none;
-          cursor: pointer;
-          outline: none;
-          transition: all 0.3s ease-in-out;
-          background-color: rgba($color: #000000, $alpha: 0.0);
-          border: 1px solid black;
-
-          &:hover {
-            background-color: black;
-            color: white;
-          }
-        }
-      }
-    }
-  }
-
-  .textGradient {
-    background: #FBA81F;
-    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .introImg {
-    width: 45%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative; // Added
-
-    img {
-      position: absolute; // Added
-      top: 50%; // Added
-      left: 50%; // Added
-      transform: translate(-50%, -50%); // Added
-      z-index: 1; // Added
-      width: 100%;
-    }
-
-    .introCircle {
-      position: relative; // Added
-
-      .outerCircle {
-        width: 100%;
-        height: 95vh;
-        border-radius: 50%;
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0.6; // Adjust opacity for outer circle
-
-        .middleCircle {
-          width: 85%;
-          height: 80vh;
-          border-radius: 50%;
-          border: 1px solid black;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          opacity: 0.8; // Adjust opacity for middle circle
-
-          .innerCircle {
-            width: 70%;
-            height: 65vh;
-            border-radius: 50%;
-            border: 1px solid black;
-            opacity: 1; // Adjust opacity for inner circle
-          }
-        }
-      }
-    }
-  }
-}
-
-
-.aboutFlex{
-  display: flex;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  justify-content: space-evenly;
-  height: 60vh;
-  .aboutImg{
-    width: 30%;
-    height: 100%;
-    background-color: grey;
-    object-position: center;
-      object-fit: cover;
-    .fblaImg{
-      width: 100%;
-    }
-  }
-  .aboutText{
-    width: 55%;
-    .aboutTitle{
-      font-size: 4rem;
-    }
-    .aboutSubtext{
-      font-weight: 600;
-    }
-    .aboutBtn{
-      a{
-        button {
-            margin-right: 1rem;
-            padding: .5rem 1rem;
-            border-radius: 5px;
-            font-size: 1.5rem;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            outline: none;
-            transition: all 0.3s ease-in-out;
-            background-color: rgba($color: #000000, $alpha: 0.0);
-            border: 3px solid black;
-        
-            &:hover {
-              background-color: black;
-              color: white;
-            }
-          }
-      }
-    }
-  }
-}
-@media screen and (max-width: 1440px) {
-.introFlex {
-  display: flex;
-  height: 95vh;
-  justify-content: space-between;
-  height: 95vh;
-
-  margin: {
-    top: 5vh;
-    bottom: 5vh;
-    right: 5rem;
-    left: 3rem;
-  }
-
-  ;
-
-  .introText {
-    font-family: poppins;
-    width: 55%;
-    font-size: 3.5rem;
     margin-left: 1rem;
     align-items: baseline;
     padding-bottom: 10vh;
@@ -208,20 +29,20 @@
       a {
         display: flex;
         align-items: center;
-        height: 100%; // Match the height of the buttons
-        text-decoration: none; // Remove underline from anchor tags
+        height: 100%;
+        text-decoration: none;
 
         button {
           margin-right: 1rem;
-          padding: .75rem 1.5rem;
+          padding: 1rem 2rem;
           border-radius: 5px;
-          font-size: 1.25rem;
+          font-size: 1.5rem;
           font-weight: 600;
           border: none;
           cursor: pointer;
           outline: none;
           transition: all 0.3s ease-in-out;
-          background-color: rgba($color: #000000, $alpha: 0.0);
+          background-color: rgba(0, 0, 0, 0);
           border: 1px solid black;
 
           &:hover {
@@ -234,475 +55,199 @@
   }
 
   .textGradient {
-    background: #FBA81F;
-    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
+    background: linear-gradient(to top left, #fba81f 0%, #f87537 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .introImg {
+  .introDiv {
     width: 45%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative; // Added
+    height: 80vh;
 
-    img {
-      position: absolute; // Added
-      top: 50%; // Added
-      left: 50%; // Added
-      transform: translate(-50%, -50%); // Added
-      z-index: 1; // Added
+    .introImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.aboutFlex {
+  display: flex;
+  margin: 10rem;
+  justify-content: space-evenly;
+  height: 60vh;
+  width: 100%;
+  margin: auto;
+
+  .aboutImg {
+    width: 30%;
+    height: 100%;
+    background-color: grey;
+    object-position: center;
+    object-fit: cover;
+
+    .fblaImg {
       width: 100%;
     }
+  }
 
+  .aboutText {
+    width: 55%;
+
+    .aboutTitle {
+      font-size: 4rem;
+    }
+
+    .aboutSubtext {
+      font-weight: 600;
+    }
+
+    .aboutBtn {
+      a {
+        button {
+          margin-right: 1rem;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          font-size: 1.5rem;
+          font-weight: 600;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          transition: all 0.3s ease-in-out;
+          background-color: rgba(0, 0, 0, 0);
+          border: 3px solid black;
+
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+    }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .introFlex {
+    margin: 5vh 5rem 5vh 3rem;
+    height: 95vh;
+
+    .introText {
+      font-size: 3.5rem;
+
+      .introBtn button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.25rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1023px) {
   .introFlex {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 95vh;
-      justify-content: space-between;
-      height: 95vh;
-  
-      .introText {
-        font-family: poppins;
-        width: 100%;
-        font-size: 3.5rem;
-        margin-left: 1rem;
-        align-items: baseline;
-        padding-bottom: 10vh;
-        align-self: center;
-        text-align: center;
-  
-        .introBtn {
-          display: flex;
-          justify-content: center;
-          .btnGradient {
-            background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
-            color: white;
-            border: none;
-  
-            &:hover {
-              color: white;
-            }
-          }
-  
-          a {
-            display: flex;
-            align-items: center;
-            height: 100%; // Match the height of the buttons
-            text-decoration: none; // Remove underline from anchor tags
-  
-            button {
-              margin-right: 1rem;
-              padding: .75rem 1.5rem;
-              border-radius: 5px;
-              font-size: 1.25rem;
-              font-weight: 600;
-              border: none;
-              cursor: pointer;
-              outline: none;
-              transition: all 0.3s ease-in-out;
-              background-color: rgba($color: #000000, $alpha: 0.0);
-              border: 1px solid black;
-  
-              &:hover {
-                background-color: black;
-                color: white;
-              }
-            }
-          }
-        }
-      }
-  
-      .textGradient {
-        background: #FBA81F;
-        background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-  
-      .introImg {
-        width: 45%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        position: relative; // Added
-  
-        img {
-          position: absolute; // Added
-          top: 50%; // Added
-          left: 50%; // Added
-          transform: translate(-50%, -50%); // Added
-          z-index: 1; // Added
-          width: 100%;
-        }
-  
-      }
-    }
-}
-
-@media screen and (max-width: 1023px) {
-  .aboutFlex{
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 60vh;
-    .aboutImg{
-      width: 80%;
+    height: auto;
+    margin: 5vh 5rem 5vh 3rem;
+
+    .introText {
+      font-size: 3.5rem;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      .introBtn {
+        justify-content: center;
+        margin-top: 2rem;
+
+        button {
+          padding: 0.75rem 1.5rem;
+          font-size: 1.25rem;
+        }
+      }
     }
-    .aboutText{
+
+    .introDiv {
       width: 80%;
+      margin-bottom: 2rem;
     }
   }
-}
 
-@media screen and (max-width: 600px) {
-  .introFlex {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 95vh;
-      justify-content: space-between;
-  
-      .introText {
-        font-family: poppins;
-        width: 100%;
-        font-size: 2.5rem;
-        margin-left: 1rem;
-        align-items: baseline;
-        padding-bottom: 10vh;
-        align-self: center;
-        text-align: center;
-  
-        .introBtn {
-          display: flex;
-          justify-content: center;
-          font-size: .85rem;
-          .btnGradient {
-            background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
-            color: white;
-            border: none;
-  
-            &:hover {
-              color: white;
-            }
-          }
-  
-          a {
-            display: flex;
-            align-items: center;
-            height: 100%; // Match the height of the buttons
-            text-decoration: none; // Remove underline from anchor tags
-  
-            button {
-              margin-right: 1rem;
-              padding: .5rem 1rem;
-              border-radius: 5px;
-              font-size: 1rem;
-              font-weight: 600;
-              border: none;
-              cursor: pointer;
-              outline: none;
-              transition: all 0.3s ease-in-out;
-              background-color: rgba($color: #000000, $alpha: 0.0);
-              border: 1px solid black;
-  
-              &:hover {
-                background-color: black;
-                color: white;
-              }
-            }
-          }
-        }
-      }
-  
-      .textGradient {
-        background: #FBA81F;
-        background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-  
-      .introImg {
-        width: 45%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        position: relative; // Added
-  
-        img {
-          position: absolute; // Added
-          top: 50%; // Added
-          left: 50%; // Added
-          transform: translate(-50%, -50%); // Added
-          z-index: 1; // Added
-          width: 100%;
-        }
-  
-      }
-    }
   .aboutFlex {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 5rem auto; // Adjusted margin for centering vertically and horizontally
+    height: auto;
+    text-align: center;
 
     .aboutImg {
       width: 80%;
     }
 
     .aboutText {
-      align-items: center;
-      width: 80%;
-      text-align: center;
+      width: 100%; // Adjusted width to take full width
+
       .aboutTitle {
-          font-size: 3rem;
-        }
-                .aboutBtn {
-                  a {
-                    button {
-                      margin-right: 1rem;
-                      padding: .25rem .5rem;
-                      border-radius: 5px;
-                      font-size: 1rem;
-                      font-weight: 600;
-                      border: none;
-                      cursor: pointer;
-                      outline: none;
-                      transition: all 0.3s ease-in-out;
-                      background-color: rgba($color: #000000, $alpha: 0.0);
-                      border: 3px solid black;
-        
-                      &:hover {
-                        background-color: black;
-                        color: #f87537;
-                      }
-                    }
-                  }
-                }
+        font-size: 2rem; 
+      }
+
+      .aboutSubtext {
+        font-weight: 600;
+      }
+
+      .aboutBtn a button {
+        margin-right: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1.25rem; // Adjusted font size
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .introFlex .introText {
+    font-size: 2.5rem;
+
+    .introBtn button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
     }
   }
 }
 
 @media screen and (max-width: 500px) {
-  .introFlex {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 95vh;
-      justify-content: space-between;
-  
-      .introText {
-        font-family: poppins;
-        width: 100%;
-        font-size: 2rem;
-        margin-left: 1rem;
-        align-items: baseline;
-        padding-bottom: 10vh;
-        align-self: center;
-        text-align: center;
-  
-        .introBtn {
-          display: flex;
-          justify-content: center;
-  
-          .btnGradient {
-            background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
-            color: white;
-            border: none;
-            &:hover {
-              color: white;
-            }
-          }
-  
-          a {
-            display: flex;
-            align-items: center;
-            height: 100%; // Match the height of the buttons
-            text-decoration: none; // Remove underline from anchor tags
-  
-            button {
-              margin-right: 1rem;
-              padding: .45rem .5rem;
-              border-radius: 5px;
-              font-size: .65rem;
-              font-weight: 600;
-              border: none;
-              cursor: pointer;
-              outline: none;
-              transition: all 0.3s ease-in-out;
-              background-color: rgba($color: #000000, $alpha: 0.0);
-              border: 1px solid black;
-  
-              &:hover {
-                background-color: black;
-                color: white;
-              }
-            }
-          }
-        }
-      }
-  
-      .textGradient {
-        background: #FBA81F;
-        background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-  
-      .introImg {
-        width: 45%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        position: relative; // Added
-  
-        img {
-          position: absolute; // Added
-          top: 50%; // Added
-          left: 50%; // Added
-          transform: translate(-50%, -50%); // Added
-          z-index: 1; // Added
-          width: 100%;
-        }
-  
-      }
-    }
-  .aboutFlex {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-      .aboutImg {
-        width: 80%;
-      }
-  
-      .aboutText {
-        align-items: center;
-        width: 80%;
-        text-align: center;
-  
-        .aboutTitle {
-          font-size: 2rem;
-        }
-        .aboutSubtext{
-          font-size: .75rem;
-        }
-  
-        .aboutBtn {
-          a {
-            button {
-              margin-right: 1rem;
-              padding: .25rem .5rem;
-              border-radius: 5px;
-              font-size: 1rem;
-              font-weight: 600;
-              border: none;
-              cursor: pointer;
-              outline: none;
-              transition: all 0.3s ease-in-out;
-              background-color: rgba($color: #000000, $alpha: 0.0);
-              border: 3px solid black;
-  
-              &:hover {
-                background-color: black;
-                color: #f87537;
-              }
-            }
-          }
-        }
-      }
-    }
-}
+  .introFlex .introText {
+    font-size: 2rem;
 
-@media screen and (max-width: 500px) {
-  .introFlex {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 95vh;
-      justify-content: space-between;
-  
-      .introText {
-        font-family: poppins;
-        width: 100%;
-        font-size: 2rem;
-        margin-left: 1rem;
-        align-items: baseline;
-        padding-bottom: 10vh;
-        align-self: center;
-        text-align: center;
-  
-        .introBtn {
-          display: flex;
-          justify-content: center;
-  
-          .btnGradient {
-            background: linear-gradient(66deg, rgba(251, 168, 31, 1) 0%, rgba(248, 117, 55, 1) 100%);
-            color: white;
-            border: none;
-  
-            &:hover {
-              color: white;
-            }
-          }
-  
-          a {
-            display: flex;
-            align-items: center;
-            height: 100%; // Match the height of the buttons
-            text-decoration: none; // Remove underline from anchor tags
-  
-            button {
-              margin-right: 1rem;
-              padding: .25rem .5rem;
-              border-radius: 5px;
-              font-size: .5rem;
-              font-weight: 600;
-              border: none;
-              cursor: pointer;
-              outline: none;
-              transition: all 0.3s ease-in-out;
-              background-color: rgba($color: #000000, $alpha: 0.0);
-              border: 1px solid black;
-  
-              &:hover {
-                background-color: black;
-                color: white;
-              }
-            }
-          }
-        }
+    .introBtn button {
+      padding: 0.45rem 0.5rem;
+      font-size: 0.65rem;
+    }
+  }
+
+  .aboutFlex {
+    .aboutImg {
+      width: 90%;
+    }
+
+    .aboutText {
+      width: 90%;
+
+      .aboutTitle {
       }
-  
-      .textGradient {
-        background: #FBA81F;
-        background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+
+      .aboutSubtext {
+        font-size: .75rem;
       }
-  
-      .introImg {
-        width: 45%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        position: relative; // Added
-  
-        img {
-          position: absolute; // Added
-          top: 50%; // Added
-          left: 50%; // Added
-          transform: translate(-50%, -50%); // Added
-          z-index: 1; // Added
-          width: 100%;
-        }
-  
+
+      .aboutBtn a button {
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
       }
     }
+  }
 }

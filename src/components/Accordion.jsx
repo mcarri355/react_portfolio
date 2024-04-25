@@ -45,7 +45,7 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description }) => {
           {title}
         </span>
         <span className="block lg:hidden text-xl font-light">{title}</span>
-        {/* Removed the icon */}
+
         <span className="w-4 h-4 bg-white group-hover:bg-slate-50 transition-colors border-r-[1px] border-b-[1px] lg:border-b-0 lg:border-t-[1px] border-slate-200 rotate-45 absolute bottom-0 lg:bottom-[50%] right-[50%] lg:right-0 translate-y-[50%] translate-x-[50%] z-20" />
       </button>
 
@@ -122,7 +122,7 @@ const items = [
     imgSrc:
       "https://www.west-mec.edu/cms/lib/AZ50010839/Centricity/Domain/10/SWC_F.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+      "I Attend West-MEC as second year student in the coding program ",
   },
   {
     id: 2,
@@ -130,7 +130,7 @@ const items = [
     imgSrc:
       "https://images.prismic.io/turing/652ec6fefbd9a45bcec81a1f_Coder_a63a8aeefd.webp?auto=format%2Ccompress&fit=max&w=3840",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+      "In the West-MEC program I have learned a number of languages that have helped me",
   },
   {
     id: 3,
@@ -138,7 +138,7 @@ const items = [
     imgSrc:
       "https://www.peoriaunified.org/cms/lib/AZ01924969/Centricity/Domain/49/IMG_4261.jpg",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+      "I attened Sunrise Mountain High School as a senior",
   },
   {
     id: 4,
@@ -146,6 +146,6 @@ const items = [
     imgSrc:
       "https://store-images.s-microsoft.com/image/apps.30323.14537704372270848.6ecb6038-5426-409a-8660-158d1eb64fb0.08703491-f5dc-4b00-bca6-486b7b293c17?q=90&w=480&h=270",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+      "In my free time I like to play video games such as Elden Ring or Valorant",
   },
 ];

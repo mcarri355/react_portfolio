@@ -20,7 +20,7 @@ const App = () => {
     <>
       <Navbar />
       <Intro />
-      <HorizontalScroll />
+      {/* <HorizontalScroll /> */}
       <Slider />
       <IntroAbout />
       <Footer />

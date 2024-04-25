@@ -2,10 +2,12 @@ $primary: #fff;
 $secondary: #ccc;
 $ternary: #272727;
 $dark: #444444;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 .logo {
     max-width: 200px;
     font-size: 3rem;
+    font-family: "poppins";
 }
 
 .navbar {
@@ -16,6 +18,7 @@ $dark: #444444;
     flex-direction: row;
     font-family: sans-serif;
     padding: 10px 50px;
+    font-family: "poppins";
 
     .push-left {
         margin-left: auto;

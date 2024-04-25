@@ -20,13 +20,13 @@ const About = () => {
             <div className='containerText'>
               <div className='containerTitle'>More About Me</div>
               <div className='containerSub'>               
-                Greetings! I am deeply passionate about delving into uncharted territories and unveiling the latent potentials that lie within. With an insatiable curiosity and an unwavering pursuit of excellence, I am invigorated by challenges and continually seek out opportunities for personal and professional growth. I firmly believe in the transformative power of human connection and the immense value of collaboration. I am driven not only to inspire those around me but also to be inspired by their unique perspectives and experiences. My journey is characterized by an unrelenting thirst for knowledge, driven by a profound belief in the endless possibilities that learning affords. I am committed to continuously expanding my horizons, both intellectually and experientially, in order to broaden my understanding of the world and deepen my impact within it.
+                Greetings! I am deeply passionate about delving into uncharted territories and unveiling the latent potentials that lie within. With an insatiable curiosity and an unwavering pursuit of excellence, I am invigorated by challenges and continually seek out opportunities for personal and professional growth. I firmly believe in the transformative power of human connection and the immense value of collaboration. I am driven not only to inspire those around me but also to be inspired by their unique perspectives and experiences. 
               </div>
             </div>
             <div className='containerSocials'>
               <a href="https://github.com/mcarri355" className='containerIcon'><FaGithub /></a>
               <a href="https://linkedin.com/in/yourusername" className='containerIcon'><FaLinkedin /></a>
-              <button className='socialBtn'>Contact</button>
+              <a href="/contact"><button className='socialBtn' >Contact</button></a>
               <a href="https://twitter.com/yourusername" className='containerIcon'><FaTwitter /></a>
               <a href="https://instagram.com/yourusername" className='containerIcon'><FaInstagram /></a>
             </div>

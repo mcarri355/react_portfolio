@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../Styles/css/intro.css';
 import Blob from '../images/blob.svg'
 import introImg from '../images/introImg.png'
+import introPic from '../images/introPic.png'
 
 const Intro = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -52,8 +53,8 @@ const Intro = () => {
             <a href="/contact"><button onclick="window.location.href='/contact'">Contact</button></a>
           </div>
         </div>
-          <div className='introImg'>
-            <img src='' alt="" />
+          <div className='imgDiv'>
+            <img src={introPic} alt="" className='introImg' />
         </div>
       </div>
     </>

@@ -11,7 +11,7 @@ const IntroAbout = () => {
         <br />
         <div className='aboutBtn'>
           <a href="/about"><button>Learn More</button></a>     
-          <a href="https://github.com/mcarri355"><button>Github</button></a>   
+          <a href="https://docs.google.com/document/d/1gXhCkC6bbUb0nM_HJaAKp8oLtNaxk6jW0RUiODn6Hv0/edit"><button>Resume</button></a>   
         </div>
       </div>
     </div>

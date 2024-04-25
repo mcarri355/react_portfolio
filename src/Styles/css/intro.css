@@ -1,12 +1,8 @@
 .introFlex {
   display: flex;
-  height: 95vh;
+  height: 80vh;
   justify-content: space-between;
-  height: 95vh;
-  margin-top: 5vh;
-  margin-bottom: 2rem;
-  margin-right: 5rem;
-  margin-left: 5rem;
+  margin: 5vh 5rem 2rem;
 }
 .introFlex .introText {
   font-family: poppins;
@@ -52,63 +48,27 @@
   color: white;
 }
 .introFlex .textGradient {
-  background: #FBA81F;
-  background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
+  background: linear-gradient(to top left, #fba81f 0%, #f87537 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.introFlex .introImg {
+.introFlex .introDiv {
   width: 45%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.introFlex .introImg img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 100%;
-}
-.introFlex .introImg .introCircle {
-  position: relative;
-}
-.introFlex .introImg .introCircle .outerCircle {
-  width: 100%;
-  height: 95vh;
-  border-radius: 50%;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.6;
-}
-.introFlex .introImg .introCircle .outerCircle .middleCircle {
-  width: 85%;
   height: 80vh;
-  border-radius: 50%;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.8;
 }
-.introFlex .introImg .introCircle .outerCircle .middleCircle .innerCircle {
-  width: 70%;
-  height: 65vh;
-  border-radius: 50%;
-  border: 1px solid black;
-  opacity: 1;
+.introFlex .introDiv .introImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .aboutFlex {
   display: flex;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin: 10rem;
   justify-content: space-evenly;
   height: 60vh;
+  width: 100%;
+  margin: auto;
 }
 .aboutFlex .aboutImg {
   width: 30%;
@@ -149,462 +109,98 @@
 
 @media screen and (max-width: 1440px) {
   .introFlex {
-    display: flex;
+    margin: 5vh 5rem 5vh 3rem;
     height: 95vh;
-    justify-content: space-between;
-    height: 95vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    margin-right: 5rem;
-    margin-left: 3rem;
   }
   .introFlex .introText {
-    font-family: poppins;
-    width: 55%;
     font-size: 3.5rem;
-    margin-left: 1rem;
-    align-items: baseline;
-    padding-bottom: 10vh;
-    align-self: center;
   }
-  .introFlex .introText .introBtn {
-    display: flex;
-  }
-  .introFlex .introText .introBtn .btnGradient {
-    background: linear-gradient(66deg, rgb(251, 168, 31) 0%, rgb(248, 117, 55) 100%);
-    color: white;
-    border: none;
-  }
-  .introFlex .introText .introBtn .btnGradient:hover {
-    color: white;
-  }
-  .introFlex .introText .introBtn a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-decoration: none;
-  }
-  .introFlex .introText .introBtn a button {
-    margin-right: 1rem;
+  .introFlex .introText .introBtn button {
     padding: 0.75rem 1.5rem;
-    border-radius: 5px;
     font-size: 1.25rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid black;
-  }
-  .introFlex .introText .introBtn a button:hover {
-    background-color: black;
-    color: white;
-  }
-  .introFlex .textGradient {
-    background: #FBA81F;
-    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .introFlex .introImg {
-    width: 45%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .introFlex .introImg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%;
   }
 }
 @media screen and (max-width: 1023px) {
   .introFlex {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 95vh;
-    justify-content: space-between;
-    height: 95vh;
+    align-items: center;
+    height: auto;
+    margin: 5vh 5rem 5vh 3rem;
   }
   .introFlex .introText {
-    font-family: poppins;
-    width: 100%;
     font-size: 3.5rem;
-    margin-left: 1rem;
-    align-items: baseline;
-    padding-bottom: 10vh;
-    align-self: center;
+    width: 100%;
     text-align: center;
+    margin-bottom: 2rem;
   }
   .introFlex .introText .introBtn {
-    display: flex;
     justify-content: center;
+    margin-top: 2rem;
   }
-  .introFlex .introText .introBtn .btnGradient {
-    background: linear-gradient(66deg, rgb(251, 168, 31) 0%, rgb(248, 117, 55) 100%);
-    color: white;
-    border: none;
-  }
-  .introFlex .introText .introBtn .btnGradient:hover {
-    color: white;
-  }
-  .introFlex .introText .introBtn a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-decoration: none;
-  }
-  .introFlex .introText .introBtn a button {
-    margin-right: 1rem;
+  .introFlex .introText .introBtn button {
     padding: 0.75rem 1.5rem;
-    border-radius: 5px;
     font-size: 1.25rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid black;
   }
-  .introFlex .introText .introBtn a button:hover {
-    background-color: black;
-    color: white;
-  }
-  .introFlex .textGradient {
-    background: #FBA81F;
-    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .introFlex .introImg {
-    width: 45%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .introFlex .introImg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .aboutFlex {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-  }
-  .aboutFlex .aboutImg {
+  .introFlex .introDiv {
     width: 80%;
-  }
-  .aboutFlex .aboutText {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .introFlex {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 95vh;
-    justify-content: space-between;
-  }
-  .introFlex .introText {
-    font-family: poppins;
-    width: 100%;
-    font-size: 2.5rem;
-    margin-left: 1rem;
-    align-items: baseline;
-    padding-bottom: 10vh;
-    align-self: center;
-    text-align: center;
-  }
-  .introFlex .introText .introBtn {
-    display: flex;
-    justify-content: center;
-    font-size: 0.85rem;
-  }
-  .introFlex .introText .introBtn .btnGradient {
-    background: linear-gradient(66deg, rgb(251, 168, 31) 0%, rgb(248, 117, 55) 100%);
-    color: white;
-    border: none;
-  }
-  .introFlex .introText .introBtn .btnGradient:hover {
-    color: white;
-  }
-  .introFlex .introText .introBtn a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-decoration: none;
-  }
-  .introFlex .introText .introBtn a button {
-    margin-right: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid black;
-  }
-  .introFlex .introText .introBtn a button:hover {
-    background-color: black;
-    color: white;
-  }
-  .introFlex .textGradient {
-    background: #FBA81F;
-    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .introFlex .introImg {
-    width: 45%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .introFlex .introImg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%;
+    margin-bottom: 2rem;
   }
   .aboutFlex {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 5rem auto;
+    height: auto;
+    text-align: center;
   }
   .aboutFlex .aboutImg {
     width: 80%;
   }
   .aboutFlex .aboutText {
-    align-items: center;
-    width: 80%;
-    text-align: center;
-  }
-  .aboutFlex .aboutText .aboutTitle {
-    font-size: 3rem;
-  }
-  .aboutFlex .aboutText .aboutBtn a button {
-    margin-right: 1rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0);
-    border: 3px solid black;
-  }
-  .aboutFlex .aboutText .aboutBtn a button:hover {
-    background-color: black;
-    color: #f87537;
-  }
-}
-@media screen and (max-width: 500px) {
-  .introFlex {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 95vh;
-    justify-content: space-between;
-  }
-  .introFlex .introText {
-    font-family: poppins;
     width: 100%;
-    font-size: 2rem;
-    margin-left: 1rem;
-    align-items: baseline;
-    padding-bottom: 10vh;
-    align-self: center;
-    text-align: center;
-  }
-  .introFlex .introText .introBtn {
-    display: flex;
-    justify-content: center;
-  }
-  .introFlex .introText .introBtn .btnGradient {
-    background: linear-gradient(66deg, rgb(251, 168, 31) 0%, rgb(248, 117, 55) 100%);
-    color: white;
-    border: none;
-  }
-  .introFlex .introText .introBtn .btnGradient:hover {
-    color: white;
-  }
-  .introFlex .introText .introBtn a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-decoration: none;
-  }
-  .introFlex .introText .introBtn a button {
-    margin-right: 1rem;
-    padding: 0.45rem 0.5rem;
-    border-radius: 5px;
-    font-size: 0.65rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid black;
-  }
-  .introFlex .introText .introBtn a button:hover {
-    background-color: black;
-    color: white;
-  }
-  .introFlex .textGradient {
-    background: #FBA81F;
-    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .introFlex .introImg {
-    width: 45%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .introFlex .introImg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%;
-  }
-  .aboutFlex {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .aboutFlex .aboutImg {
-    width: 80%;
-  }
-  .aboutFlex .aboutText {
-    align-items: center;
-    width: 80%;
-    text-align: center;
   }
   .aboutFlex .aboutText .aboutTitle {
     font-size: 2rem;
   }
   .aboutFlex .aboutText .aboutSubtext {
-    font-size: 0.75rem;
+    font-weight: 600;
   }
   .aboutFlex .aboutText .aboutBtn a button {
     margin-right: 1rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0);
-    border: 3px solid black;
+    font-size: 1.25rem;
   }
-  .aboutFlex .aboutText .aboutBtn a button:hover {
-    background-color: black;
-    color: #f87537;
+}
+@media screen and (max-width: 600px) {
+  .introFlex .introText {
+    font-size: 2.5rem;
+  }
+  .introFlex .introText .introBtn button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 500px) {
-  .introFlex {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 95vh;
-    justify-content: space-between;
-  }
   .introFlex .introText {
-    font-family: poppins;
-    width: 100%;
     font-size: 2rem;
-    margin-left: 1rem;
-    align-items: baseline;
-    padding-bottom: 10vh;
-    align-self: center;
-    text-align: center;
   }
-  .introFlex .introText .introBtn {
-    display: flex;
-    justify-content: center;
+  .introFlex .introText .introBtn button {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.65rem;
   }
-  .introFlex .introText .introBtn .btnGradient {
-    background: linear-gradient(66deg, rgb(251, 168, 31) 0%, rgb(248, 117, 55) 100%);
-    color: white;
-    border: none;
+  .aboutFlex .aboutImg {
+    width: 90%;
   }
-  .introFlex .introText .introBtn .btnGradient:hover {
-    color: white;
+  .aboutFlex .aboutText {
+    width: 90%;
   }
-  .introFlex .introText .introBtn a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-decoration: none;
+  .aboutFlex .aboutText .aboutSubtext {
+    font-size: 0.75rem;
   }
-  .introFlex .introText .introBtn a button {
-    margin-right: 1rem;
+  .aboutFlex .aboutText .aboutBtn a button {
     padding: 0.25rem 0.5rem;
-    border-radius: 5px;
-    font-size: 0.5rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid black;
-  }
-  .introFlex .introText .introBtn a button:hover {
-    background-color: black;
-    color: white;
-  }
-  .introFlex .textGradient {
-    background: #FBA81F;
-    background: linear-gradient(to top left, #FBA81F 0%, #F87537 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .introFlex .introImg {
-    width: 45%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .introFlex .introImg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%;
+    font-size: 1rem;
   }
 }
