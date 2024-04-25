@@ -1,29 +1,21 @@
 import React, { useEffect } from 'react';
-import '../Styles/css/progress.css'; // Assuming you have your CSS in a file named 'progress.css'
+import { gsap } from 'gsap';
+import '../Styles/css/progress.css';
 
 function ProgressBar() {
     useEffect(() => {
-        progress_bar();
+        animateProgressBar();
     }, []);
 
-    function progress_bar() {
-        const speed = 30;
+    function animateProgressBar() {
+        const speed = 3; // Adjust animation speed as needed
         const items = document.querySelectorAll('.progress_bar_item');
 
         items.forEach((item) => {
             const progressBar = item.querySelector('.progress');
             const itemValue = parseInt(progressBar.getAttribute('data-progress'));
-            let i = 0;
-
-            const count = setInterval(() => {
-                if (i <= itemValue) {
-                    progressBar.style.width = i + '%';
-                    item.querySelector('.item_value').innerText = i + '%';
-                } else {
-                    clearInterval(count);
-                }
-                i++;
-            }, speed);
+            gsap.fromTo(progressBar, { width: '0%' }, { width: `${itemValue}%`, duration: speed });
+            gsap.to(item.querySelector('.item_value'), { innerText: `${Math.floor(itemValue)}%`, duration: speed });
         });
     }
 

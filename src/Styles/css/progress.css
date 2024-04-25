@@ -29,5 +29,6 @@
 @media screen and (max-width: 768px) {
   .progress_bar {
     flex-direction: column;
+    width: 100%;
   }
 }
