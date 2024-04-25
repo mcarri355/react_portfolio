@@ -55,6 +55,8 @@ const Slider = () => {
     };
 
     return (
+    <>
+        <div className='projectTitle'>Featured Projects</div>
         <div className="slider">
             <div className="list">
                 {items.map((item, index) => (
@@ -86,6 +88,7 @@ const Slider = () => {
                 ))}
             </div>
         </div>
+        </>
     );
 };
 

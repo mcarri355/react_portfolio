@@ -5,6 +5,14 @@ body {
   background-color: #010101;
 }
 
+.projectTitle {
+  font-family: Poppins;
+  display: flex;
+  width: 90%;
+  font-size: 3rem;
+  margin: auto;
+}
+
 svg {
   width: 25px;
 }
@@ -224,6 +232,9 @@ header .menu {
   .thumbnail {
     justify-content: start;
   }
+  .projectTitle {
+    font-size: 2rem;
+  }
   .slider .list .item .content h2 {
     font-size: 60px;
   }
@@ -240,5 +251,10 @@ header .menu {
     font-size: x-large;
     color: #eee;
     transition: 0.5s;
+  }
+}
+@media screen and (max-width: 400px) {
+  .projectTitle {
+    font-size: 1rem;
   }
 }
