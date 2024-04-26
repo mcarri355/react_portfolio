@@ -179,28 +179,49 @@
   }
   .introFlex .introText .introBtn button {
     padding: 0.5rem 1rem;
+    font-size: 0.5rem;
+  }
+  .introFlex .introText .introBtn a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+  }
+  .introFlex .introText .introBtn a button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     font-size: 1rem;
+    font-weight: 600;
   }
 }
 @media screen and (max-width: 500px) {
   .introFlex .introText {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .introFlex .introText .introBtn button {
-    padding: 0.45rem 0.5rem;
-    font-size: 0.65rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.5rem;
   }
-  .aboutFlex .aboutImg {
-    width: 90%;
+  .introFlex .introText {
+    font-size: 1.45rem;
   }
-  .aboutFlex .aboutText {
-    width: 90%;
+  .introFlex .introText .introBtn {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
-  .aboutFlex .aboutText .aboutSubtext {
-    font-size: 0.75rem;
+  .introFlex .introText .introBtn a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
   }
-  .aboutFlex .aboutText .aboutBtn a button {
-    padding: 0.25rem 0.5rem;
+  .introFlex .introText .introBtn a button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     font-size: 1rem;
+    font-weight: 600;
   }
 }
