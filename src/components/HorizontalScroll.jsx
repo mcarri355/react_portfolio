@@ -44,7 +44,7 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <div key={card.id} className="group relative cardSize overflow-hidden bg-neutral-200 border-2 border-black">
+    <div key={card.id} className="group relative cardSize overflow-hidden bg-white border-2 border-black">
       <div className="absolute inset-0 z-0 scrollFlex flex flex-col justify-start items-center">
         <div className="p-4 bg-opacity-50 text-black text-lg text-center cardTitle">{card.title}</div>
         <div className="p-4 bg-opacity-50 text-black text-lg text-center cardDesc">{card.description}</div>
