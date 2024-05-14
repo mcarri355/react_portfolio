@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
@@ -11,9 +11,15 @@ import Slider from './components/Slider';
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Adjust the animation duration as needed
-      once: true, // Whether animation should only happen once
+      duration: 1000,
+      once: true,
     });
+
+    // Scroll to the slider element on component mount
+    const sliderElement = document.getElementById('slider');
+    if (sliderElement) {
+      sliderElement.scrollIntoView({ behavior: 'smooth' });
+    }
   }, []);
 
   return (
@@ -21,7 +27,9 @@ const App = () => {
       <Navbar />
       <Intro />
       <HorizontalScroll />
-      <Slider />
+      <div id="slider">
+        <Slider />
+      </div>
       <IntroAbout />
       <Footer />
     </>
